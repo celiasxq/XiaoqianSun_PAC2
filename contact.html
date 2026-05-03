@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Xiaoqian Sun</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 你的自定义样式 -->
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+        /* 针对表单的微调：点击输入框时显示 Teal 色 */
+        .form-control:focus {
+            border-color: var(--teal);
+            box-shadow: 0 0 0 0.25rem rgba(74, 155, 142, 0.25);
+        }
+    </style>
+</head>
+<body style="background-color: var(--bg);">
+
+    <!-- 1. 统一导航栏 -->
+    <nav class="navbar navbar-expand-lg custom-nav">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">CELIAS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="memories.html">Memories</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Contact 头部区 -->
+    <header class="py-5" style="background-color: var(--dark); color: #fff;">
+        <div class="container text-center py-4">
+            <h1 class="display-4 brand-font mb-3">Say <span style="color: var(--teal);">Hello</span></h1>
+            <p class="lead" style="color: #8ab5b0;">(Or don't try to find me, I'll find you!)</p>
+        </div>
+    </header>
+
+    <!-- 3. 表单区 (Requirement i: 包含有效表单) -->
+    <main class="container mt-n5"> <!-- 稍微往上移动一点点，营造重叠感 -->
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow border-0 rounded-4 overflow-hidden">
+                    <div class="row g-0">
+                        <!-- 左侧装饰条 -->
+                        <div class="col-md-1 d-none d-md-block" style="background-color: var(--teal);"></div>
+                        
+                        <div class="col-md-11 p-4 p-md-5 bg-white">
+                            <h2 class="display-6 brand-font mb-2">Let me stalk you first</h2>
+                            <p class="text-muted mb-5">Please let me know more about you.</p>
+
+                            <form class="row g-4">
+                                <!-- 姓名 -->
+                                <div class="col-md-12">
+                                    <label for="userName" class="form-label small text-uppercase fw-bold text-muted">Full Name</label>
+                                    <input type="text" class="form-control form-control-lg bg-light border-0" id="userName" placeholder="Your name here" required>
+                                </div>
+
+                                <!-- 邮箱 -->
+                                <div class="col-md-6">
+                                    <label for="userEmail" class="form-label small text-uppercase fw-bold text-muted">Email Address</label>
+                                    <input type="email" class="form-control form-control-lg bg-light border-0" id="userEmail" placeholder="name@example.com">
+                                </div>
+
+                                <!-- Instagram -->
+                                <div class="col-md-6">
+                                    <label for="userInsta" class="form-label small text-uppercase fw-bold text-muted">Instagram Handle</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-0 text-teal">@</span>
+                                        <input type="text" class="form-control form-control-lg bg-light border-0" id="userInsta" placeholder="username">
+                                    </div>
+                                </div>
+
+                                <!-- 备注 -->
+                                <div class="col-12">
+                                    <label for="userNote" class="form-label small text-uppercase fw-bold text-muted">Note</label>
+                                    <textarea class="form-control form-control-lg bg-light border-0" id="userNote" rows="4" placeholder="Write your note here..."></textarea>
+                                </div>
+
+                                <!-- 提交按钮 -->
+                                <div class="col-12 pt-3">
+                                    <button type="submit" class="btn btn-teal btn-lg px-5 shadow-sm">Submit Info</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+  <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+    <div class="container text-center text-md-start">
+        <div class="row">
+            <!-- 1. 品牌介绍 -->
+            <div class="col-md-4 mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold" style="color: var(--teal);">CELIAS'S SPACE</h5>
+                <p class="small text-muted">Showcasing digital projects and creative journey for the Master in Digital Content Management at UB.</p>
+            </div>
+
+            <!-- 2. 快速跳转 (两列变多列感) -->
+            <div class="col-md-4 mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold" style="color: var(--teal);">Quick Links</h5>
+                <div class="row">
+                    <div class="col-6">
+                        <p><a href="index.html" class="text-white text-decoration-none small">Home</a></p>
+                        <p><a href="about.html" class="text-white text-decoration-none small">About</a></p>
+                    </div>
+                    <div class="col-6">
+                        <p><a href="blog.html" class="text-white text-decoration-none small">Blog</a></p>
+                        <p><a href="contact.html" class="text-white text-decoration-none small">Contact</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. 社交链接 -->
+            <div class="col-md-4 mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold" style="color: var(--teal);">Connect</h5>
+                <p><a href="https://instagram.com/你的账号" target="_blank" class="text-white text-decoration-none small">
+                    <i class="fab fa-instagram me-2"></i>Instagram
+                </a></p>
+                <p><a href="mailto:你的邮箱" class="text-white text-decoration-none small">
+                    <i class="fas fa-envelope me-2"></i>Email Me
+                </a></p>
+            </div>
+        </div>
+        <hr class="mb-4" style="background-color: #555;">
+        <p class="text-center small">© 2026 All Rights Reserved | Xiaoqian Sun | Designed for PAC2</p>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

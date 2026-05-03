@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Xiaoqian Sun</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="css/custom.css">
+    
+    <style>
+        /* 确保页面主体背景一致 */
+        body { background-color: var(--bg); }
+        /* 悬停效果：底部引导图标 */
+        .nav-hover:hover { opacity: 0.7; transition: 0.3s; }
+        /* 列表项微调 */
+        .skill-list li { border-bottom: 1px solid #eee; }
+        .skill-list li:last-child { border-bottom: none; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. 导航栏 -->
+    <nav class="navbar navbar-expand-lg custom-nav">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">CELIAS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="memories.html">Memories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. 主体内容 -->
+    <main class="container mt-5 pt-4">
+        <div class="row g-5 align-items-stretch"> 
+            
+            <!-- 左侧：照片、技能与语言图表 -->
+            <div class="col-lg-4 d-flex">
+                <div class="p-4 shadow-sm rounded bg-white border-top border-4 w-100" style="border-top-color: var(--teal) !important;">
+                    <!-- 个人照片 -->
+                    <img src="media/me.jpg" class="img-fluid rounded-circle shadow mb-4 d-block mx-auto" alt="Xiaoqian Sun" style="width: 150px; height: 150px; object-fit: cover;">
+                    
+                    <h4 class="brand-font h5 mb-4 text-center">Technical Skills</h4>
+                    <ul class="list-unstyled small lh-lg mb-5 skill-list">
+                        <li class="mb-3 pb-2">📊 <strong>Data Analysis:</strong> Advanced Excel (Pivot, Formulas), SQL</li>
+                        <li class="mb-3 pb-2">📈 <strong>Visualization:</strong> Power BI, Highcharts JS</li>
+                        <li class="mb-3 pb-2">🛠️ <strong>Ops:</strong> Quality monetization (KPIs), Solid SOP development</li>
+                    </ul>
+
+                    <h4 class="brand-font h5 mb-3 text-center">Language Proficiency</h4>
+                    <!-- 唯一的图表容器位置 -->
+                    <div id="languageChart" style="width: 100%; height: 250px;"></div>
+                </div>
+            </div>
+
+            <!-- 右侧：工作经历与学术背景 -->
+            <div class="col-lg-8 d-flex">
+                <div class="w-100 bg-white p-4 p-md-5 shadow-sm rounded">
+                    <h2 class="display-6 mb-4 brand-font">Work <span style="color: var(--teal);">Experience</span></h2>
+                    
+                    <div class="experience-item mb-4 pb-3 border-bottom">
+                        <h5 class="fw-bold mb-1">Trade-In Seller Success Intern <span class="text-muted fw-normal fs-6">| Back Market</span></h5>
+                        <p class="small text-muted mb-0">Managed seller performance and financial risk via KPI systems, optimized trade-in operations for "Buybulk" project, and drafted SOPs for BPO efficiency.</p>
+                    </div>
+
+                    <div class="experience-item mb-4 pb-3 border-bottom">
+                        <h5 class="fw-bold mb-1">Channel Operations Specialist <span class="text-muted fw-normal fs-6">| MEXC</span></h5>
+                        <p class="small text-muted mb-0">Managed 200+ global affiliates and EU Telegram communities, achieving 100% volume growth through data-driven performance reviews.</p>
+                    </div>
+
+                    <div class="experience-item mb-5">
+                        <h5 class="fw-bold mb-1">Overseas Publishing Procurement Intern <span class="text-muted fw-normal fs-6">| Lilith Games</span></h5>
+                        <p class="small text-muted mb-0">Oversaw 130+ global procurement orders and 100+ suppliers, managing $250K budgets for AFK: Journey activities with significant cost savings.</p>
+                    </div>
+
+                    <h2 class="display-6 mb-4 brand-font">Academic <span style="color: var(--teal);">Journey</span></h2>
+                    <div class="p-4 rounded-4" style="background-color: rgba(74, 155, 142, 0.05); border-left: 5px solid var(--teal);">
+                        <h5 class="fw-bold mb-1">Master's in Digital Humanities</h5>
+                        <p class="text-teal fw-bold mb-2">University of Barcelona | 09/2024 – 06/2025</p>
+                        <p class="small text-muted mb-0">
+                            <strong>Core courses:</strong> Web Portal Creation, Creation and Management of Digital Heritage, Transmedia, Literature and Digital Environments, Data Visualization, Databases and Semantic Web, Conceptualization and Design of Cultural Websites.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. 底部引导链接 -->
+        <div class="row mt-5 pt-5 border-top text-center">
+            <div class="col-12">
+                <p class="lead italic mb-4">"Apart from those, who am I? Maybe enter my place of memory to explore more?"</p>
+                <div class="d-flex justify-content-center gap-5">
+                    <a href="blog.html" class="text-decoration-none text-dark nav-hover">
+                        <div class="fs-1">🔑</div>
+                        <span class="small fw-bold text-uppercase" style="color: var(--teal);">Read Blog</span>
+                    </a>
+                    <a href="memories.html" class="text-decoration-none text-dark nav-hover">
+                        <div class="fs-1">🖼️</div>
+                        <span class="small fw-bold text-uppercase" style="color: var(--teal);">See Memories</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+    <div class="container text-center text-md-start">
+        <div class="row">
+            <!-- 1. 品牌介绍 -->
+            <div class="col-md-4 mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold" style="color: var(--teal);">CELIAS'S SPACE</h5>
+                <p class="small text-muted">Showcasing digital projects and creative journey for the Master in Digital Content Management at UB.</p>
+            </div>
+
+            <!-- 2. 快速跳转 (两列变多列感) -->
+            <div class="col-md-4 mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold" style="color: var(--teal);">Quick Links</h5>
+                <div class="row">
+                    <div class="col-6">
+                        <p><a href="index.html" class="text-white text-decoration-none small">Home</a></p>
+                        <p><a href="about.html" class="text-white text-decoration-none small">About</a></p>
+                    </div>
+                    <div class="col-6">
+                        <p><a href="blog.html" class="text-white text-decoration-none small">Blog</a></p>
+                        <p><a href="contact.html" class="text-white text-decoration-none small">Contact</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. 社交链接 -->
+            <div class="col-md-4 mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold" style="color: var(--teal);">Connect</h5>
+                <p><a href="https://instagram.com/你的账号" target="_blank" class="text-white text-decoration-none small">
+                    <i class="fab fa-instagram me-2"></i>Instagram
+                </a></p>
+                <p><a href="mailto:你的邮箱" class="text-white text-decoration-none small">
+                    <i class="fas fa-envelope me-2"></i>Email Me
+                </a></p>
+            </div>
+        </div>
+        <hr class="mb-4" style="background-color: #555;">
+        <p class="text-center small">© 2026 All Rights Reserved | Xiaoqian Sun | Designed for PAC2</p>
+    </div>
+</footer>
+
+    <!-- 脚本加载顺序优化 -->
+    <!-- 换成这个更通用的库链接 -->
+<!-- 必须先加载核心库 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/10.3.3/highcharts.js"></script>
+<!-- 然后加载你的业务逻辑，确保路径是 js/script.js -->
+<script src="js/script.js"></script>
+    <!-- 3. 初始化脚本 -->
+    <script>
+       
+    </script>
+</body>
+</html>
