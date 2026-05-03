@@ -84,28 +84,32 @@
         </div>
     </header>
 
-    <main class="container mt-5">
-        
-        <!-- 3. 视频区块 -->
-        <div class="row justify-content-center mb-5 pb-5 border-bottom">
-            <div class="col-lg-8">
-                <h3 class="brand-font mb-1">No.1 Paris</h3>
-                <p class="text-muted small mb-4">Concert that we queued for 3h</p>
-                
-                <!-- 嵌入区：你可以把下方的 blockquote 替换成 Instagram 的 Embed Code -->
-                <!-- 本地视频播放器 -->
-<div class="ratio ratio-16x9 shadow-lg rounded overflow-hidden bg-dark">
-    <video controls poster="media/video-placeholder.jpg">
-        <source src="media/paris-concert.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- 视频展示区域 -->
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10"> <!-- 控制视频在电脑端的最大宽度 -->
+            
+            <h3 class="text-center mb-4" style="color: var(--teal);">My Video Journey</h3>
+            
+            <!-- 响应式视频容器 (16:9 比例) -->
+            <div class="ratio ratio-16x9 shadow-sm rounded">
+                <iframe 
+                    src="https://www.youtube.com/embed/EH-m7Ta9yWI?si=PW-q4EUYnb5Wfe7q" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
             </div>
+            
+            <p class="text-muted mt-3 small text-center">
+                Note: This video is hosted on YouTube to ensure smooth playback across all devices.
+            </p>
+            
         </div>
+    </div>
+</div>
 
         <!-- 4. Gallery 标题 -->
         <div class="row mb-5">
